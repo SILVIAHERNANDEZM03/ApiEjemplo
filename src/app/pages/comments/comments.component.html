@@ -1,0 +1,19 @@
+<h1>Comentarios</h1>
+
+<br>
+<div *ngFor="let comentario of comentarios | async">
+  <div class="card">
+    <div class="card-body">
+      <div class="card-title">
+        <h5>{{ comentario.name }}</h5>
+      </div>
+      <div class="card-text">
+        {{ comentario.email }}
+        <h5>{{ comentario.body }}</h5>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+</div>
