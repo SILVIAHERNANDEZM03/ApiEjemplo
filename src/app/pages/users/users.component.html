@@ -1,0 +1,63 @@
+<h1>Usuarios</h1>
+
+<div class="row">
+<div class="col-md-6 float-md-end mb-3 text-start" *ngFor="let usuario of usuarios | async">
+  <div class="card text-bg-info">
+    <div class="card-body">
+      <div class="card-title">
+        {{ usuario.name }}
+      </div>
+      <div class="card-text">
+        {{ usuario.username}}
+      </div>
+      <div class="card-text">
+        {{ usuario.email }}
+      </div>
+      <div class="card-text">
+        {{ usuario.address }}
+      </div>
+      <div class="card-text">
+        {{ usuario.street }}
+      </div>
+      <div class="card-text">
+        {{ usuario.suite }}
+      </div>
+      <div class="card-text">
+        {{ usuario.city }}
+      </div>
+        <div class="card-text">
+        {{ usuario.zipcode }}
+        </div>
+      <div class="card-text">
+        {{ usuario.geo }}
+      </div>
+      <div class="card-text">
+        {{ usuario.lat }}
+      </div>
+      <div class="card-text">
+        {{ usuario.lng }}
+      </div>
+      <div class="card-text">
+        {{ usuario.phone}}
+      </div>
+      <div class="card-text">
+        {{ usuario.website }}
+      </div>
+      <div class="card-text">
+        {{ usuario.company }}
+      </div>
+      <div class="card-text">
+        {{ usuario.name }}
+      </div>
+      <div class="card-text">
+        {{ usuario.catchPhrase }}
+      </div>
+      <div class="card-text">
+        {{ usuario.bs }}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>

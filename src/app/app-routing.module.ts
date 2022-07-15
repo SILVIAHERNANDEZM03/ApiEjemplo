@@ -5,6 +5,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 import { CommentsComponents } from './pages/comments/comments.component';
+import { UsersComponent} from './pages/users/users.component';
+import { todosComponents} from './pages/todos/todos.component';
+import { albumsComponents} from './pages/albums/albums.component';
+import { photosComponents} from './pages/photos/photos.component';
 
 
 const routes: Routes = [
@@ -30,6 +34,23 @@ const routes: Routes = [
     component: CommentsComponents
   },
   {
+    path: 'users',
+    component: UsersComponent
+  },
+  {
+    path: 'todos',
+    component: todosComponents
+  },
+  {
+    path: 'albums',
+    component: albumsComponents
+  },
+  {
+    path: 'photos',
+    component: photosComponents
+  },
+  {
+
     path: '**',
     redirectTo: 'home'
   }

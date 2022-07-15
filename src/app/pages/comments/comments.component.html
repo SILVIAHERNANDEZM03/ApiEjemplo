@@ -5,11 +5,19 @@
   <div class="card">
     <div class="card-body">
       <div class="card-title">
-        <h5>{{ comentario.name }}</h5>
+    {{ comentario.postId }}
+      </div>
+      <div class="card-title">
+        {{ comentario.id }}
+      </div>
+      <div class="card-title">
+        {{ comentario.name }}
       </div>
       <div class="card-text">
         {{ comentario.email }}
-        <h5>{{ comentario.body }}</h5>
+      </div>
+      <div class="card-text">
+        {{ comentario.body }}
       </div>
     </div>
   </div>

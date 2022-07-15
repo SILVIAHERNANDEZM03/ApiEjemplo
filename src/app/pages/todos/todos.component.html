@@ -1,0 +1,23 @@
+<h1>Todos</h1>
+
+<div class="row">
+<div class=" col-md-6 float-md-end mb-3 text-center" *ngFor="let todo of todos | async">
+  <div class="card text-bg-info">
+    <div class="card-body">
+      <div class="card-title">
+        {{ todo.userId }}
+      </div>
+      <div class="card-title">
+        {{ todo.id }}
+      </div>
+      <div class="card-text">
+        {{ todo.title }}
+      </div>
+      <div class="card-text">
+        {{ todo.completed }}
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>

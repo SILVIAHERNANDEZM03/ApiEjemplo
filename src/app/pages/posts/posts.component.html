@@ -1,18 +1,16 @@
-<h1>Publicaciones</h1>
+<h1 xmlns="http://www.w3.org/1999/html">Publicaciones</h1>
 
-<br>
-    <div *ngFor="let data of mensajes | async">
-        <div class="card">
-            <div class="card-body">
-                <div class="card-title">
-                    <h5>{{ data.title }}</h5>
-                </div>
-                <div class="card-text">
-                    {{ data.body }}
-                </div>
-            </div>
+<div class="row">
+  <div class="col-md-6 float-md-end mb-3 text-center"*ngFor="let data of mensajes | async">
+    <div class="card text-bg-info ">
+      <div class="card-body">
+        <div class="card-title">
+          <h5>{{ data.title }}</h5>
         </div>
-
-        <br>
-
+        <div class="card-text">
+          {{ data.body }}
+        </div>
+      </div>
     </div>
+  </div>
+</div>

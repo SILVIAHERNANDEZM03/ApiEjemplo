@@ -1,0 +1,26 @@
+<h1>Fotos</h1>
+
+<div class="row">
+<div class=" col-md-6 float-md-end mb-3 text-center" *ngFor="let foto of fotos | async">
+  <div class="card text-bg-info">
+    <div class="card-body">
+      <div class="card-title">
+    {{ foto.albumId }}
+      </div>
+      <div class="card-title">
+        {{ foto.id }}
+      </div>
+      <div class="card-title">
+        {{ foto.title }}
+      </div>
+      <div class="card-text">
+        {{ foto.url }}
+      </div>
+      <div class="card-text">
+        {{ foto.thumbnailUrl }}
+      </div>
+    </div>
+  </div>
+</div>
+
+

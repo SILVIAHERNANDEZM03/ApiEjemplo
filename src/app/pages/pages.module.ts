@@ -4,6 +4,10 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { CommentsComponents } from './comments/comments.component';
+import { UsersComponent} from './users/users.component';
+import { todosComponents} from './todos/todos.component';
+import { albumsComponents} from './albums/albums.component';
+import {photosComponents} from './photos/photos.component';
 
 
 
@@ -13,6 +17,10 @@ import { CommentsComponents } from './comments/comments.component';
     ContactComponent,
     HomeComponent,
     CommentsComponents,
+    UsersComponent,
+    todosComponents,
+    albumsComponents,
+    photosComponents,
   ],
   imports: [
     CommonModule
@@ -22,6 +30,10 @@ import { CommentsComponents } from './comments/comments.component';
     ContactComponent,
     HomeComponent,
     CommentsComponents,
+    UsersComponent,
+    todosComponents,
+    albumsComponents,
+    photosComponents,
   ]
 })
 export class PagesModule { }
