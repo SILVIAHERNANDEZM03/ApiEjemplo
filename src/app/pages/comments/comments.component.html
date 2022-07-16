@@ -1,19 +1,21 @@
+<div class="text-center">
 <h1>Comentarios</h1>
+</div>
 
-<br>
-<div *ngFor="let comentario of comentarios | async">
-  <div class="card">
+<div class="row">
+<div class="text-truncate text-start text-nowrap col-md-6 float-md-end mb-3" *ngFor="let comentario of comentarios | async">
+  <div class="card text-bg-dark">
     <div class="card-body">
-      <div class="card-title">
+      <div class="fw-bold card-title">
     {{ comentario.postId }}
       </div>
-      <div class="card-title">
+      <div class="fw-bold card-title">
         {{ comentario.id }}
       </div>
       <div class="card-title">
         {{ comentario.name }}
       </div>
-      <div class="card-text">
+      <div class="fw-bold card-text">
         {{ comentario.email }}
       </div>
       <div class="card-text">
@@ -21,7 +23,5 @@
       </div>
     </div>
   </div>
-
-  <br>
-
+</div>
 </div>

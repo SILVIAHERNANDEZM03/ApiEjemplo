@@ -1,13 +1,15 @@
+<div class="text-center">
 <h1>Todos</h1>
+</div>
 
 <div class="row">
-<div class=" col-md-6 float-md-end mb-3 text-center" *ngFor="let todo of todos | async">
-  <div class="card text-bg-info">
+<div class="text-truncate text-start text-nowrap col-md-6 float-md-end mb-3" *ngFor="let todo of todos | async">
+  <div class="card text-bg-warning">
     <div class="card-body">
-      <div class="card-title">
+      <div class="fw-bold card-title">
         {{ todo.userId }}
       </div>
-      <div class="card-title">
+      <div class="fw-bold card-title">
         {{ todo.id }}
       </div>
       <div class="card-text">

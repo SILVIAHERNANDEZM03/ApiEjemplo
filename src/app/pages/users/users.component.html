@@ -1,10 +1,12 @@
+<div class="text-center">
 <h1>Usuarios</h1>
+</div>
 
 <div class="row">
-<div class="col-md-6 float-md-end mb-3 text-start" *ngFor="let usuario of usuarios | async">
-  <div class="card text-bg-info">
+<div class="text-truncate text-start text-nowrap col-md-6 float-md-end mb-3" *ngFor="let usuario of usuarios | async">
+  <div class="card text-bg-secondary">
     <div class="card-body">
-      <div class="card-title">
+      <div class="fw-bold card-title">
         {{ usuario.name }}
       </div>
       <div class="card-text">
