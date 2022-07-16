@@ -1,13 +1,14 @@
+<div class="text-center">
 <h1 xmlns="http://www.w3.org/1999/html">Publicaciones</h1>
-
+</div>
 <div class="row">
-  <div class="col-md-6 float-md-end mb-3 text-center"*ngFor="let data of mensajes | async">
+  <div class="text-truncate text-start text-nowrap col-md-6 float-md-end mb-3 "*ngFor="let data of mensajes | async">
     <div class="card text-bg-info ">
       <div class="card-body">
-        <div class="card-title">
+        <div class="text-truncate text-center text-uppercase card-title">
           <h5>{{ data.title }}</h5>
         </div>
-        <div class="card-text">
+        <div class="text-truncate fst-normal lh-1 card-text">
           {{ data.body }}
         </div>
       </div>
