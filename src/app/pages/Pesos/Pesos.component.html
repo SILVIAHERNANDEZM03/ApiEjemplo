@@ -1,0 +1,22 @@
+<div class="text-center">
+  <h1>Pesos</h1>
+</div>
+
+<div class="row">
+  <div class=" text-truncate text-start text-nowrap col-md-6 float-md-end mb-3 " *ngFor="let Peso of Pesos | async">
+    <div class="card text-bg-success">
+      <div class="card-body">
+        <div class="card-title">
+          {{ Peso.IDPacientesMascotas }}
+        </div>
+        <div class="card-title">
+          {{ Peso.FechaConsulta }}
+        </div>
+        <div class="card-title">
+          {{ Peso.Peso }}
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+

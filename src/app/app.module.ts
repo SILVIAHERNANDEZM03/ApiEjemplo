@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { PagesModule } from './pages/pages.module';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PagesModule } from './pages/pages.module';
     PagesModule,
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

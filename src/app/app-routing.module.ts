@@ -9,6 +9,13 @@ import { UsersComponent} from './pages/users/users.component';
 import { todosComponents} from './pages/todos/todos.component';
 import { albumsComponents} from './pages/albums/albums.component';
 import { photosComponents} from './pages/photos/photos.component';
+import { PersonaComponent} from './pages/Persona/Persona.component';
+import {ClientesFamiliaComponent} from './pages/ClientesFamilia/ClientesFamilia.component';
+import {RelacionPersonasClientesComponent} from './pages/RelacionPersonasClientes/RelacionPersonasClientes.component';
+import {PacientesMascotasComponent} from './pages/PacientesMascotas/PacientesMascotas.component';
+import {VacunasComponent} from './pages/Vacunas/Vacunas.component';
+import {PesosComponent} from './pages/Pesos/Pesos.component';
+
 
 
 const routes: Routes = [
@@ -26,7 +33,7 @@ const routes: Routes = [
   },
   {
     path: 'posts',
-    // loadChildren: './pages/posts/posts.module#PostsModule'
+    // loadChildren: './pages/posts/posts.module#PesosModule'
     loadChildren: () => import('./pages/posts/posts.module').then(m => m.PostsModule)
   },
   {
@@ -50,10 +57,33 @@ const routes: Routes = [
     component: photosComponents
   },
   {
-
+    path: 'Persona',
+    component: PersonaComponent
+  },
+  {
+    path: 'ClientesFamilia',
+    component: ClientesFamiliaComponent
+  },
+  {
+    path: 'RelacionPersonasClientes',
+    component: RelacionPersonasClientesComponent
+  },
+  {
+    path: 'PacientesMascotas',
+    component: PacientesMascotasComponent
+  },
+  {
+    path: 'Vacunas',
+    component: VacunasComponent
+  },
+  {
+    path: 'Pesos',
+    component: PesosComponent
+  },
+  {
     path: '**',
     redirectTo: 'home'
-  }
+  },
 ];
 
 

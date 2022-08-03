@@ -43,6 +43,30 @@ export class MenuComponent implements OnInit {
     {
       name: 'photos',
       path: '/photos'
+    },
+    {
+      name: 'Persona',
+      path: '/Persona'
+    },
+    {
+      name: 'ClientesFamilia',
+      path: '/ClientesFamilia'
+    },
+    {
+      name: 'RelacionPersonasClientes',
+      path: '/RelacionPersonasClientes'
+    },
+    {
+      name: 'PacientesMascotas',
+      path: '/PacientesMascotas'
+    },
+    {
+      name: 'Vacunas',
+      path: '/Vacunas'
+    },
+    {
+      name: 'Pesos',
+      path: '/Pesos'
     }
 
 

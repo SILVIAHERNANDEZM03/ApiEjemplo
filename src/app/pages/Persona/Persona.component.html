@@ -1,0 +1,27 @@
+<div class="text-center">
+  <h1>Personas en mi api veterinaria</h1>
+</div>
+
+<div class="row">
+  <div class=" text-truncate text-start text-nowrap col-md-6 float-md-end mb-3 " *ngFor="let Persona of Persona | async">
+    <div class="card text-bg-success">
+      <div class="card-body">
+        <div class="card-title">
+          {{ Persona.nombrepersona }}
+        </div>
+        <div class="card-title">
+          {{ Persona.apellidopersona }}
+        </div>
+        <div class="card-title">
+          {{ Persona.telefono }}
+        </div>
+        <div class="card-text">
+          {{ Persona.direccion }}
+        </div>
+        <div class="card-text">
+          {{ Persona.email }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

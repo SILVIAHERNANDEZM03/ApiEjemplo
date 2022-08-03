@@ -3,18 +3,18 @@ import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-posts',
-  templateUrl: './posts.component.html',
-  styleUrls: ['./posts.component.css']
+  templateUrl: './Persona.component.html',
+  styleUrls: ['./Persona.component.css']
 })
-export class PostsComponent implements OnInit {
+export class PersonaComponent implements OnInit {
 
-  mensajes: any;
+  Persona: any;
 
 
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.mensajes = this.dataService.getPosts();
+    this.Persona = this.dataService.getPersona();
   }
 
 

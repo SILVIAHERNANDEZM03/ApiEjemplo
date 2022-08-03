@@ -8,8 +8,12 @@ import { UsersComponent} from './users/users.component';
 import { todosComponents} from './todos/todos.component';
 import { albumsComponents} from './albums/albums.component';
 import {photosComponents} from './photos/photos.component';
-
-
+import {PersonaComponent} from './Persona/Persona.component';
+import { ClientesFamiliaComponent} from './ClientesFamilia/ClientesFamilia.component';
+import { RelacionPersonasClientesComponent} from './RelacionPersonasClientes/RelacionPersonasClientes.component';
+import { PacientesMascotasComponent} from './PacientesMascotas/PacientesMascotas.component';
+import { VacunasComponent} from './Vacunas/Vacunas.component';
+import { PesosComponent} from './Pesos/Pesos.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +25,13 @@ import {photosComponents} from './photos/photos.component';
     todosComponents,
     albumsComponents,
     photosComponents,
+    PersonaComponent,
+    ClientesFamiliaComponent,
+    RelacionPersonasClientesComponent,
+    PacientesMascotasComponent,
+    VacunasComponent,
+    PesosComponent,
+
   ],
   imports: [
     CommonModule
@@ -34,6 +45,13 @@ import {photosComponents} from './photos/photos.component';
     todosComponents,
     albumsComponents,
     photosComponents,
+    PersonaComponent,
+    ClientesFamiliaComponent,
+    RelacionPersonasClientesComponent,
+    PacientesMascotasComponent,
+    VacunasComponent,
+    PesosComponent,
+
   ]
 })
 export class PagesModule { }

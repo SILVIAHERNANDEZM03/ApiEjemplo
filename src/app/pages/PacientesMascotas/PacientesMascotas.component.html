@@ -1,0 +1,33 @@
+<div class="text-center">
+  <h1>Pacientes Mascotas</h1>
+</div>
+
+<div class="row">
+  <div class=" text-truncate text-start text-nowrap col-md-6 float-md-end mb-3 " *ngFor="let PacientesMascotas of PacientesMascotas | async">
+    <div class="card text-bg-info">
+      <div class="card-body">
+        <div class="card-title">
+          {{ PacientesMascotas.IDClientesFamilia }}
+        </div>
+        <div class="card-title">
+          {{ PacientesMascotas.AliasMascota }}
+        </div>
+        <div class="card-title">
+          {{ PacientesMascotas.Especie }}
+        </div>
+        <div class="card-title">
+          {{ PacientesMascotas.Raza }}
+        </div>
+        <div class="card-title">
+          {{ PacientesMascotas.ColorPelo }}
+        </div>
+        <div class="card-title">
+          {{ PacientesMascotas.FechaNacimiento }}
+        </div>
+        <div class="card-title">
+          {{ PacientesMascotas.Vacunaciones }}
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
